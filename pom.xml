@@ -4,8 +4,37 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.apache.tomcat</groupId>
     <artifactId>tomcat-deployment-listener</artifactId>
-    <version>1.0</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
+
+    <name>Abort tomcat when a webapp fails to deploy in Docker container</name>
+    <description>
+        Docker container best practice. Tomcat does not stop if a webapp fail to deploy and the container will continue
+        to run.
+        By adding this listener the tomcat will abort in case the Tomcat failes to deploy the webapp,
+        And the container will not start.
+        You will need to place the listener in Tomcat server.xml and set the Tomcat classpath to contain this jar
+    </description>
+    <url>https://github.com/yohayg/tomcat-deployment-listener.git</url>
+
+    <issueManagement>
+        <url>https://github.com/yohayg/tomcat-deployment-listener/issues</url>
+        <system>GitHub Issues</system>
+    </issueManagement>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/yohayg/tomcat-deployment-listener</url>
+        <connection>scm:git:git://github.com/yohayg/tomcat-deployment-listener.git</connection>
+        <developerConnection>scm:git:git@github.com:yohayg/tomcat-deployment-listener.git</developerConnection>
+    </scm>
     <dependencies>
         <dependency>
             <groupId>org.apache.tomcat</groupId>

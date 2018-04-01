@@ -6,3 +6,4 @@ after_success:
   - mvn -Dgpg.skip=true cobertura:cobertura coveralls:report
 jdk:
   - oraclejdk8
+  - openjdk7

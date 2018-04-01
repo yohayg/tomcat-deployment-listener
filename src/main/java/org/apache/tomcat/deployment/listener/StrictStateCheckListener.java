@@ -8,9 +8,15 @@ import org.apache.catalina.*;
  * not start in case the webapp fail to deploy
  * This listener is for use in tomcat containers by adding it to:
  * ${CATALINA_HOME}/conf/server.xml
+ *
+ * @author ygolan
+ * @version $Id: $Id
  */
 public class StrictStateCheckListener implements LifecycleListener {
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void lifecycleEvent(LifecycleEvent event) {
         String type = event.getType();

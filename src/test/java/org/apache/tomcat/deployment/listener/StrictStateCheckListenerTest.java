@@ -9,6 +9,13 @@ import org.junit.Assert;
 import org.junit.Test;
 
 
+/**
+ * <p>StrictStateCheckListenerTest class.</p>
+ *
+ * @author ygolan
+ * @version $Id: $Id
+ * @since 1.0.0
+ */
 public class StrictStateCheckListenerTest {
 
     /**

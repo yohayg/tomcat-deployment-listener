@@ -4,11 +4,17 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.apache.tomcat</groupId>
     <artifactId>tomcat-deployment-listener</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Abort tomcat when a webapp fails to deploy in Docker container</name>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
+    <name>tomcat-deployment-listener</name>
     <description>
+        Abort tomcat when a webapp fails to deploy in Docker container
         Docker container best practice. Tomcat does not stop if a webapp fail to deploy and the container will continue
         to run.
         By adding this listener the tomcat will abort in case the Tomcat failes to deploy the webapp,

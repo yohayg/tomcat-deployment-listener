@@ -1,17 +1,15 @@
 Tomcat listener will abort Tomcat process when a webapp fail to deploy
 =========================
-[![Dependency Status](https://gemnasium.com/jirutka/maven-badges.svg)](https://gemnasium.com/jirutka/maven-badges)
+[![Build Status](https://travis-ci.org/yohayg/tomcat-deployment-listener.svg?branch=master)](https://travis-ci.org/yohayg/tomcat-deployment-listener)
 
-Badges! These tiny pictures with label and some numbers, you see them in many GitHub readmes. We all love them, yeah? Travis, Coveralls, Code Climate, Gemnasium, Gem, PyPi, npm… 
-However, most of them are not usable for Java/Groovy guys and that’s quite sad, isn’t it?
-
-Well, I put together [shields.io](http://shields.io/), [Heroku](https://heroku.com) and some Ruby code to generate a shiny badge that shows an artifact’s version available in Maven Central.
 
 
 Usage
 -----
 
-    https://maven-badges.herokuapp.com/maven-central/{group_id}/{artifact_id}/badge.(svg|png)?style={style}
+Mount the jar in the tomcat classpath and add to server.xml:
+
+    <Listener className="com.marketo.rtp.server.web.StrictStateCheckListener" />
 
 For example:
 
@@ -19,9 +17,6 @@ For example:
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/cz.jirutka.rsql/rsql-parser/badge.svg)](https://maven-badges.herokuapp.com/maven-central/cz.jirutka.rsql/rsql-parser)
 
-	[![Maven Central](https://maven-badges.herokuapp.com/maven-central/cz.jirutka.rsql/rsql-parser/badge.svg?style=plastic)](https://maven-badges.herokuapp.com/maven-central/cz.jirutka.rsql/rsql-parser)
-
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/cz.jirutka.rsql/rsql-parser/badge.svg?style=plastic)](https://maven-badges.herokuapp.com/maven-central/cz.jirutka.rsql/rsql-parser)
 
 License
 -------

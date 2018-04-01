@@ -1,7 +1,7 @@
 Tomcat listener will abort Tomcat process when a webapp fail to deploy
 =========================
 [![Build Status](https://travis-ci.org/yohayg/tomcat-deployment-listener.svg?branch=master)](https://travis-ci.org/yohayg/tomcat-deployment-listener)
-
+ [![Coverage Status](https://coveralls.io/repos/github/yohayg/tomcat-deployment-listener/badge.svg?branch=master)](https://coveralls.io/github/yohayg/tomcat-deployment-listener?branch=master)
 
 
 Usage

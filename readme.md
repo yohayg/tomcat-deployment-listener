@@ -19,14 +19,8 @@ failed to initialize properly.
 
 By adding the additional jar created by this project to Tomcat classpath and adding the new listener in the Tomcat
 conf/server.xml the user can make sure the Tomcat process fails in case there is an initialization exception in
-their web application which will cause the Tomcat used the tomcat container to abort in immediately indicate
-that there was an initialization error
-Abort tomcat when a webapp fails to deploy in Docker container
-Docker container best practice. Tomcat does not stop if a webapp fail to deploy and the container will continue
-to run.
-By adding this listener the tomcat will abort in case the Tomcat failes to deploy the webapp,
-And the container will not start.
-You will need to place the listener in Tomcat server.xml and set the Tomcat classpath to contain this jar
+their web application which will cause the Tomcat used in the tomcat container to abort, and immediately indicate
+that there was an initialization error.
 
 
 Usage

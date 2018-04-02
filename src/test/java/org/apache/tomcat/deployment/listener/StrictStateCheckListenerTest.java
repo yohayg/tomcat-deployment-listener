@@ -53,10 +53,10 @@ public class StrictStateCheckListenerTest {
 
     private StandardService getStandardService(LifecycleState state) {
         StandardService service = new StandardService();
-        StateTestContainer container = new StateTestContainer();
-        container.setName("8005");
-        container.setTestState(state);
-        service.setContainer(container);
+        StateTestEngine engine = new StateTestEngine();
+        engine.setName("8005");
+        engine.setTestState(state);
+        service.setContainer(engine);
         return service;
     }
 }

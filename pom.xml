@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.yohayg</groupId>
     <artifactId>tomcat-deployment-listener</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>2.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -14,22 +14,23 @@
 
     <name>tomcat-deployment-listener</name>
     <description>
-        According to docker best practices a docker container should not be up if the process fails to load properly.
+        According to Docker best practices a Docker container should not be up if the process fails to load properly.
 
         Apache Tomcat deploys all the web applications loaded in its webapp folder. This is a resilient solution for web
         applications not influencing the application server.
 
-        However, In a docker environment according to best practice, the process should fail in case the web application
-        failed to initilize properly.
+        However, In a Docker environment according to best practice, the process should fail in case the web application
+        failed to initialize properly.
 
-        By adding the addional jar created by this project to Tomcat classpath and adding the new listener in the Tomcat
+        By adding the additional jar created by this project to Tomcat classpath and adding the new listener in the
+        Tomcat
         conf/server.xml the user can make sure the Tomcat process fails in case there is an initialization exception in
         their web application which will cause the Tomcat used the tomcat container to abort in immediately indicate
-        that there was an initilization error
+        that there was an initialization error
         Abort tomcat when a webapp fails to deploy in Docker container
         Docker container best practice. Tomcat does not stop if a webapp fail to deploy and the container will continue
         to run.
-        By adding this listener the tomcat will abort in case the Tomcat failes to deploy the webapp,
+        By adding this listener the tomcat will abort in case the Tomcat fails to deploy the webapp,
         And the container will not start.
         You will need to place the listener in Tomcat server.xml and set the Tomcat classpath to contain this jar
     </description>
@@ -57,13 +58,7 @@
         <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-catalina</artifactId>
-            <version>7.0.53</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.tomcat</groupId>
-            <artifactId>tomcat-coyote</artifactId>
-            <version>7.0.0</version>
-            <scope>test</scope>
+            <version>9.0.6</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>

@@ -15,6 +15,8 @@ RUN sed -i \
     's/<\/Server>/\\t<Listener className="org.apache.tomcat.deployment.listener.StrictStateCheckListener" \/>\\n<\/Server>/g' \
     $CATALINA_HOME/conf/server.xml \
     && awk '{gsub("\\\\n","\n")};1'  $CATALINA_HOME/conf/server.xml > $CATALINA_HOME/conf/server_temp.xml \
+    && mv $CATALINA_HOME/conf/server_temp.xml $CATALINA_HOME/conf/server.xml \
+    && awk '{gsub("\\\\t","\t")};1'  $CATALINA_HOME/conf/server.xml > $CATALINA_HOME/conf/server_temp.xml \
     && mv $CATALINA_HOME/conf/server_temp.xml $CATALINA_HOME/conf/server.xml
 
 #add the jar to tomcat lib

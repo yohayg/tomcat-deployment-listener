@@ -1,23 +1,23 @@
 package org.apache.tomcat.deployment.listener;
 
 import org.apache.catalina.LifecycleState;
-import org.apache.catalina.core.StandardContext;
+import org.apache.catalina.core.StandardEngine;
 
 /**
- * <p>StateTestContainer class.</p>
+ * <p>StateTestEngine class.</p>
  *
  * @author ygolan
  * @version $Id: $Id
  * @since 1.0.0
  */
-public class StateTestContainer extends StandardContext {
+public class StateTestEngine extends StandardEngine {
 
     private LifecycleState state;
 
     /**
      * <p>setTestState.</p>
      *
-     * @param state a {@link org.apache.catalina.LifecycleState} object.
+     * @param state a {@link LifecycleState} object.
      */
     public void setTestState(LifecycleState state) {
 

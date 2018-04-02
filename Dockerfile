@@ -1,13 +1,13 @@
-FROM tomcat:7-jre8-alpine
+FROM tomcat:9-jre8-alpine
 
 MAINTAINER yohayg@gmail.com
 
 RUN apk update && apk add sed
 ##build image
-#docker build -t yohayg/tomcat-deployment-listener:1.0.0 .
+#docker build -t yohayg/tomcat-deployment-listener:2.0.0 .
 
 ##run container
-#docker run -it --rm -p 8080:8080  yohayg/tomcat-deployment-listener:1.0.0
+#docker run -it --rm -p 8080:8080  yohayg/tomcat-deployment-listener:2.0.0
 
 #add the listener to the tomcat server.xml
 #pretty print with \t and \n
@@ -20,7 +20,7 @@ RUN sed -i \
     && mv $CATALINA_HOME/conf/server_temp.xml $CATALINA_HOME/conf/server.xml
 
 #add the jar to tomcat lib
-COPY target/tomcat-deployment-listener-1.0.0-SNAPSHOT.jar $CATALINA_HOME/lib
+COPY target/tomcat-deployment-listener-2.0.0-SNAPSHOT.jar $CATALINA_HOME/lib
 
 EXPOSE 8080
 CMD ["catalina.sh", "run"]

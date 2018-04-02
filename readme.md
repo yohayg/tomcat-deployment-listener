@@ -5,6 +5,7 @@ Tomcat listener will abort Tomcat process when a webapp fail to deploy
  [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
  [![Maintainability](https://api.codeclimate.com/v1/badges/ceb43a5678ffe6d7e1de/maintainability)](https://codeclimate.com/github/yohayg/tomcat-deployment-listener/maintainability)
 
+
 Description
 -----------
 
@@ -35,6 +36,19 @@ Mount the jar in the tomcat classpath and add to server.xml:
 
     <Listener className="com.marketo.rtp.server.web.StrictStateCheckListener" />
 
+
+Example
+-------
+See Dockerfile:
+
+build:
+
+
+    docker build -t yohayg/tomcat-deployment-listener:1.0.0 .
+
+run:
+
+    docker run -it --rm -p 8080:8080  yohayg/tomcat-deployment-listener:1.0.0
 
 
 License

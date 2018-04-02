@@ -29,7 +29,7 @@ Usage
 
 Mount the jar in the tomcat classpath and add to server.xml:
 
-    <Listener className="com.marketo.rtp.server.web.StrictStateCheckListener" />
+    <Listener className="org.apache.tomcat.deployment.listener.StrictStateCheckListener" />
 
 
 Example

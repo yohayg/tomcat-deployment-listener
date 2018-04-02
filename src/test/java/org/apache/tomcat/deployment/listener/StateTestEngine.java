@@ -1,6 +1,8 @@
 package org.apache.tomcat.deployment.listener;
 
+import org.apache.catalina.Context;
 import org.apache.catalina.LifecycleState;
+import org.apache.catalina.core.StandardContext;
 import org.apache.catalina.core.StandardEngine;
 
 /**
@@ -10,7 +12,7 @@ import org.apache.catalina.core.StandardEngine;
  * @version $Id: $Id
  * @since 1.0.0
  */
-public class StateTestEngine extends StandardEngine {
+public class StateTestEngine extends StandardContext {
 
     private LifecycleState state;
 

@@ -6,7 +6,7 @@ Tomcat listener will abort Tomcat process when a webapp fail to deploy
  [![Coverage Status](https://coveralls.io/repos/github/yohayg/tomcat-deployment-listener/badge.svg?branch=master)](https://coveralls.io/github/yohayg/tomcat-deployment-listener?branch=master) 
  [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
  [![Maintainability](https://api.codeclimate.com/v1/badges/ceb43a5678ffe6d7e1de/maintainability)](https://codeclimate.com/github/yohayg/tomcat-deployment-listener/maintainability)
- [![Docker Automated build](https://docker-badges.herokuapp.com/docker-hub/yohayg/tomcat-deployment-listener/badge.svg)](https://hub.docker.com/r/yohayg/tomcat-deployment-listener/)
+ [![Docker Automated build](http://docker-badges.herokuapp.com/docker-hub/yohayg/tomcat-deployment-listener/badge.svg)](https://hub.docker.com/r/yohayg/tomcat-deployment-listener/)
  [![Javadocs](https://www.javadoc.io/badge/com.github.yohayg/tomcat-deployment-listener.svg)](http://www.javadoc.io/doc/com.github.yohayg/tomcat-deployment-listener)
 
 

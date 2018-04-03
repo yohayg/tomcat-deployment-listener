@@ -1,10 +1,14 @@
 Tomcat listener will abort Tomcat process when a webapp fail to deploy
 =========================
+ 
+ [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.yohayg/tomcat-deployment-listener/badge.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.github.yohayg%22%20AND%20a%3A%22tomcat-deployment-listener%22)
  [![Build Status](https://travis-ci.org/yohayg/tomcat-deployment-listener.svg?branch=master)](https://travis-ci.org/yohayg/tomcat-deployment-listener)
  [![Coverage Status](https://coveralls.io/repos/github/yohayg/tomcat-deployment-listener/badge.svg?branch=master)](https://coveralls.io/github/yohayg/tomcat-deployment-listener?branch=master) 
  [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
  [![Maintainability](https://api.codeclimate.com/v1/badges/ceb43a5678ffe6d7e1de/maintainability)](https://codeclimate.com/github/yohayg/tomcat-deployment-listener/maintainability)
  [![Docker Automated build](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/yohayg/tomcat-deployment-listener/)
+ [![Javadocs](https://www.javadoc.io/badge/com.github.yohayg/tomcat-deployment-listener/1.0.0.svg)](http://www.javadoc.io/doc/com.github.yohayg/tomcat-deployment-listener/1.0.0)
+
 
 
 Description

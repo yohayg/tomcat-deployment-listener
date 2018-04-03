@@ -20,7 +20,7 @@ RUN sed -i \
     && mv $CATALINA_HOME/conf/server_temp.xml $CATALINA_HOME/conf/server.xml
 
 #add the jar to tomcat lib
-COPY target/koko/tomcat-deployment-listener-3.0.0-SNAPSHOT.jar $CATALINA_HOME/lib
+COPY target/tomcat-deployment-listener-3.0.0-SNAPSHOT.jar $CATALINA_HOME/lib
 
 EXPOSE 8080
 CMD ["catalina.sh", "run"]

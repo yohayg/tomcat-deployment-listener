@@ -1,4 +1,4 @@
 *.iml
 .idea
 target/*
-!target/*SNAPSHOT.jar
+!target/*2.0.0.jar

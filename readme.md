@@ -51,6 +51,7 @@ run:
 Versions:
 --------
 1.x.x - Supports tomcat7
+
 2.x.x - Supports both tomcat8 and both tomcat9
 
 License

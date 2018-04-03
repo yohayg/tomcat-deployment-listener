@@ -10,7 +10,6 @@ Tomcat listener will abort Tomcat process when a webapp fail to deploy
  [![Javadocs](https://www.javadoc.io/badge/com.github.yohayg/tomcat-deployment-listener.svg)](http://www.javadoc.io/doc/com.github.yohayg/tomcat-deployment-listener)
 
 
-
 Description
 -----------
 

@@ -39,11 +39,11 @@ See Dockerfile:
 build:
 
 
-    docker build -t yohayg/tomcat-deployment-listener:2.0.0 .
+    docker build -t yohayg/tomcat-deployment-listener:3.0.0 .
 
 run:
 
-    docker run -it --rm -p 8080:8080  yohayg/tomcat-deployment-listener:2.0.0
+    docker run -it --rm -p 8080:8080  yohayg/tomcat-deployment-listener:3.0.0
 
 
 License
